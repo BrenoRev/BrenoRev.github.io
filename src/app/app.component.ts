@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   public todos: any[] = [];
-  
+  public title: String = "Minhas tarefas";
+
   constructor() {
     this.todos.push('Passear com o cachorro');
     this.todos.push('Ir ao supermercado');
@@ -18,4 +19,7 @@ export class AppComponent {
     this.todos.push({message: 'teste'})
   }
 
+  alterarTexto(): void {
+    this.title = "Texto Alterado";
+  }
 }
