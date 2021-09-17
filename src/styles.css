@@ -14,6 +14,28 @@ body{
     justify-content: center;
 }
  
+.text-center{
+    text-align: center;
+}
+
+.title{
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    font-size: 5em;
+    text-shadow: 3px 5px #000;
+}
+
+.button{
+    background-color: #000;
+    border: none;
+    padding: 20px;
+    color:#ffffff;
+    border-radius: 30px;
+    font-size: 1em;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 button{
     cursor: pointer;
 }
