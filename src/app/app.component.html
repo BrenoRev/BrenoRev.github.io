@@ -2,6 +2,6 @@
 <button (click)="alterarTexto()">Alterar</button>
 <ul>
   <li *ngFor="let todo of todos">
-  {{todo.id}}.{{ todo.title }} | <button>Remover</button> | <button *ngIf="!todo.done">Concluir</button> <button *ngIf="todo.done">Refazer</button>
+  {{todo.id}}.{{ todo.title }} | <button (click)="remove(this.todo)">Remover</button> | <button *ngIf="!todo.done">Concluir</button> <button *ngIf="todo.done">Refazer</button>
   </li>
 </ul>

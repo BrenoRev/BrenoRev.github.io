@@ -22,4 +22,23 @@ export class AppComponent {
   alterarTexto(): void {
     this.title = "Texto Alterado";
   }
+
+  remove(todo: Todo){
+    // Achar o index do todo passado como parametro
+    const index = this.todos.indexOf(todo);
+    
+    // Se o index existir na lista
+    if(index !== -1){
+      // Vai retirar esse todo da lista
+      this.todos.splice(index, 1);
+    }
+  }
+
+  markAsDone(){
+
+  }
+
+  markAsUndone(){
+
+  }
 }
