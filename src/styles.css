@@ -70,3 +70,14 @@ ul{
     border-radius: 10px;
     box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
 }
+
+#modal{
+     text-align: left;
+     margin: 10px;
+     padding: 10px;
+     list-style: none;
+     background: #ffffff;
+     border-radius: 10px;
+     box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+
+}
