@@ -18,7 +18,7 @@
     formControlName="title">
     <small class="danger" *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 5 a 60 caracteres</small>
     <p class="text-center">
-      <button [disabled]="form.invalid" (click)="add()" class="button"><i class="far fa-save"></i>Salvar</button>
+      <button [disabled]="form.invalid" (click)="add()" class="button">Salvar</button>
     </p>
 </form>
 </div>
