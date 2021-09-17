@@ -21,11 +21,6 @@ export class AppComponent {
         Validators.minLength(5)
       ])]
     })
-    this.todos.push(new Todo(1,"Passear com o cachorro", false));
-    this.todos.push(new Todo(2,"Ir ao Supermercado", false));
-    this.todos.push(new Todo(3,"Cortar o cabelo", false));
-    this.todos.push(new Todo(4,new Date().toDateString(), false));
-    this.todos.push(new Todo(5,"Ir a Academia", true));
   }
 
   add(){
