@@ -71,4 +71,8 @@ export class AppComponent {
       this.todos = items;
     }
   }
+
+  changeMode(mode: string){
+    this.mode=mode;
+  }
 }

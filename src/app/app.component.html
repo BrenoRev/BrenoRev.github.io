@@ -1,5 +1,5 @@
 <h1 class="title animate__animated animate__bounce">{{title}}</h1>
-<ul>
+<ul *ngIf="mode=='list'">
   <p *ngIf="todos.length===0"><small>Não tem nenhuma tarefa hoje!</small></p>
   <li *ngFor="let todo of todos">
   {{ todo.title }}  
@@ -22,3 +22,12 @@
   </fieldset>
 </form>
 </div>
+
+<button class="add-button animated fadeInUp button" (click)="changeMode('add')" *ngIf="mode=='list'">
+  <i class="fas fa-plus-circle"></i>
+  NOVA TAREFA
+</button>
+<button class="add-button animated fadeInUp button" (click)="changeMode('list')" *ngIf="mode=='add'">
+  <i class="fas fa-plus-circle"></i>
+  CANCELAR
+</button>
