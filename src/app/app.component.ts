@@ -21,6 +21,7 @@ export class AppComponent {
         Validators.minLength(5)
       ])]
     })
+    this.load();
   }
 
   add(){
@@ -45,14 +46,17 @@ export class AppComponent {
       // Vai retirar esse todo da lista
       this.todos.splice(index, 1);
     }
+    this.save();
   }
 
   markAsDone(todo: Todo){
     todo.done = true
+    this.save();
   }
 
   markAsUndone(todo: Todo){
     todo.done = false;
+    this.save();
   }
 
   save(){
