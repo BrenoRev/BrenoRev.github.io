@@ -28,6 +28,13 @@ export class AppComponent {
     this.todos.push(new Todo(5,"Ir a Academia", true));
   }
 
+  add(){
+    // this.form.value => { title: 'Titulo'}
+    const title = this.form.controls['title'].value;
+    const id = this.todos.length +1;
+    this.todos.push(new Todo(id, title, false));
+  }
+
   alterarTexto(): void {
     this.title = "Texto Alterado";
   }
