@@ -38,7 +38,7 @@ export class AppComponent {
     todo.done = true
   }
 
-  markAsUndone(){
-
+  markAsUndone(todo: Todo){
+    todo.done = false;
   }
 }
