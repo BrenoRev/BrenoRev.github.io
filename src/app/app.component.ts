@@ -26,7 +26,7 @@ export class AppComponent {
   remove(todo: Todo){
     // Achar o index do todo passado como parametro
     const index = this.todos.indexOf(todo);
-    
+
     // Se o index existir na lista
     if(index !== -1){
       // Vai retirar esse todo da lista
@@ -34,8 +34,8 @@ export class AppComponent {
     }
   }
 
-  markAsDone(){
-
+  markAsDone(todo: Todo){
+    todo.done = true
   }
 
   markAsUndone(){
