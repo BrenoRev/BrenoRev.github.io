@@ -2,8 +2,8 @@
 <ul>
   <p *ngIf="todos.length===0"><small>Não tem nenhuma tarefa hoje!</small></p>
   <li *ngFor="let todo of todos">
-  {{todo.id}}.{{ todo.title }} | 
-  <button (click)="remove(this.todo)">Remover</button> |
+  {{ todo.title }}  
+  <button (click)="remove(this.todo)">Remover</button> 
   <button (click)="markAsDone(this.todo)" *ngIf="!todo.done">Concluir</button> 
   <button (click)="markAsUndone(this.todo)" *ngIf="todo.done">Refazer</button>
   </li>
