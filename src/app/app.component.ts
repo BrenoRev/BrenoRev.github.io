@@ -35,10 +35,6 @@ export class AppComponent {
     this.form.reset();
   }
 
-  alterarTexto(): void {
-    this.title = "Texto Alterado";
-  }
-
   remove(todo: Todo){
     // Achar o index do todo passado como parametro
     const index = this.todos.indexOf(todo);
