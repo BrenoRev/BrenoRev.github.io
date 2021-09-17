@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #3023ae;
+    background: -moz-linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
+    background: -webkit-linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
+    background: linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
+
+    display: flex;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    overflow-y: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
