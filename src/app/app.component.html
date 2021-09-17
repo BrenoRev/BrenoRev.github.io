@@ -16,6 +16,7 @@
     placeholder="Título da Tarefa" 
     maxlength="60" 
     formControlName="title">
+    <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 5 a 60 caracteres</small>
     <button>Salvar</button>
   </fieldset>
 </form>
