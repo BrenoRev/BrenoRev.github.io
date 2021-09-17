@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Todo } from 'src/models/todo.model';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public todos: any[] = [];
+  public todos: Todo[] = [];
   public title: String = "Minhas tarefas";
 
   constructor() {
-    this.todos.push('Passear com o cachorro');
+    this.todos.push(new Todo());
     this.todos.push('Ir ao supermercado');
     this.todos.push('Cortar o cabelo');
     this.todos.push(1999);

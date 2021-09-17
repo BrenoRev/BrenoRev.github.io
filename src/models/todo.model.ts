@@ -1,5 +1,6 @@
 export class Todo{
-    public todo: String="";
-    public done: Boolean=false;
-    public id: number=1;
+
+    constructor(id: number, todo: String, done: Boolean) {
+        
+    }
 }
