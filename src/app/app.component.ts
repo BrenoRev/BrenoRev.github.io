@@ -59,4 +59,10 @@ export class AppComponent {
     const data = JSON.stringify(this.todos);
     localStorage.setItem('todos', data);
   }
+
+  load(){
+    const data = localStorage.getItem('todos');
+    const items = JSON.parse(data!);
+    this.todos = items;
+  }
 }
