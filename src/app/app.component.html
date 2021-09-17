@@ -10,16 +10,16 @@
 </ul>
 
 <div id="modal" *ngIf="mode=='add'" class="animated flipInX">
+  <h1 class="text-center">Nova Tarefa</h1>
 <form [formGroup]="form">
-  <fieldset>
-    <label>Tarefa </label>
     <input type="text"
     placeholder="Título da Tarefa" 
     maxlength="60" 
     formControlName="title">
-    <button class="button"  (click)="add()" [disabled]="form.invalid">Salvar</button>
-    <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 5 a 60 caracteres</small>
-  </fieldset>
+    <small class="danger" *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 5 a 60 caracteres</small>
+    <p class="text-center">
+      <button [disabled]="form.invalid" (click)="add()" class="button"><i class="far fa-save"></i>Salvar</button>
+    </p>
 </form>
 </div>
 
